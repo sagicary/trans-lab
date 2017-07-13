@@ -5,7 +5,7 @@
 }
 /*ESPACIO AL HEADER Y ALINEACION*/
 header{
-	padding: 100px; 
+	padding: 70px; 
 	text-align: center;
 }
 /*ESTILOS DE LA IMAGEN*/
@@ -17,4 +17,23 @@ header{
 .titulo{
 	color: #f6a800;
 	font-weight: bolder;
+}
+/*ESTILOS DEL BOTON*/
+.btn-color{
+	background-color: #f6a800;
+	color: #3e3f41;
+	width: 100%;
+	border: 0px;
+}
+.blanco{
+	color: white;
+}
+.izq{
+	text-align: left;
+}
+.orange{
+	color: #f6a800;
+}
+.top{
+	padding-top: 30px;
 }

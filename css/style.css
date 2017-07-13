@@ -25,15 +25,28 @@ header{
 	width: 100%;
 	border: 0px;
 }
+/*TEXTO BLANCO*/
 .blanco{
 	color: white;
 }
+/*ALINEADO IZQ*/
 .izq{
 	text-align: left;
 }
+/*TEXTO NARANJO*/
 .orange{
 	color: #f6a800;
 }
+/*ALINEACIÓN DESDE ARRIBA*/
 .top{
 	padding-top: 30px;
+}
+
+/*ESTILOS MENU-APP*/
+.navbar-toggle{
+	float: left;
+	margin-left: 15px;
+}
+.centro{
+	text-align: center;
 }

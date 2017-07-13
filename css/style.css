@@ -43,10 +43,40 @@ header{
 }
 
 /*ESTILOS MENU-APP*/
+/*ESTILO HAMBURGUESA*/
 .navbar-toggle{
 	float: left;
 	margin-left: 15px;
+	margin-top: 10px;
 }
+/*ALINEAR CENTRO*/
 .centro{
 	text-align: center;
+}
+/*TEXTO CENTRO NAV*/
+.navbar-brand{
+	padding: 15px 20%;
+	line-height: 30px;
+}
+/*COLOR TEXTO CENTRO NAV*/
+.navbar-default .navbar-brand{
+	color: white;
+}
+/*BORDE HAMBURGUESA*/
+.navbar-default .navbar-toggle{
+	border: 0px;
+}
+/*QUITAR BORDE NAVBAR*/
+.navbar-default{
+	border: 0px;
+}
+/*ESTILOS MENU*/
+.menu{
+	background-color: #a9a9ab;
+	height: 100vh;
+	padding-top: 50%;
+}
+/*ESPACIO ARRIBA*/
+.mtop{
+	margin-top: 10px;
 }

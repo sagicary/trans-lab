@@ -1,2 +1,20 @@
 /* YeyeYeee código aquí */
-
+/*COLOR DE FONDO*/
+*{
+	background-color: #3e3f41; 
+}
+/*ESPACIO AL HEADER Y ALINEACION*/
+header{
+	padding: 100px; 
+	text-align: center;
+}
+/*ESTILOS DE LA IMAGEN*/
+.imagen{
+	width: 50%;
+	height: 50%;
+}
+/*TITULO DEL HEADER*/
+.titulo{
+	color: #f6a800;
+	font-weight: bolder;
+}

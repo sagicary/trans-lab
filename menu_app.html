@@ -14,40 +14,33 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<nav class="navbar navbar-default">
+
 	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <div class="centro">
-	      <a class="navbar-brand blanco" href="#">TRANS-LAB</a>
-	      </div>
+	    <div class="navbar-header text-center">
+	      <span class="blanco icono" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+	        <span class="blanco">TRANS-LAB</span>
 	    </div>
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Link</a></li>
-	      </ul>
-	      <ul class="nav navbar-nav navbar-left">
-	        <li><a href="#">Link</a></li>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
+	   </div><!-- /.container-fluid -->
+
 	<div>
 		<div class="col-xs-12 text-center menu">
-	       	<button type="button" class="btn btn-default btn-color blanco mtop">VER SALDO</button>
-	       	<button type="button" class="btn btn-default btn-color blanco mtop">CALCULAR TARIFA</button>
-	       	<button type="button" class="btn btn-default btn-color blanco mtop">PERFIL</button>
-	       	<button type="button" class="btn btn-default btn-color blanco mtop">PREGUNTAS FRECUENTES</button>
+	       	<button type="button" class="btn btn-default btn-color blanco mtop" id="saldo">VER SALDO</button>
+	       	<button type="button" class="btn btn-default btn-color blanco mtop" id="tarifa">CALCULAR TARIFA</button>
+	       	<button type="button" class="btn btn-default btn-color blanco mtop" id="perfil">PERFIL</button>
+	       	<button type="button" class="btn btn-default btn-color blanco mtop" id="faq">PREGUNTAS FRECUENTES</button>
 		</div>
 	</div>
+
+	<!--PROBANDO SIDENAV-->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i></a>
+		<a href="saldo.html" class="mder"><i class="fa fa-usd" aria-hidden="true"></i>Ver Saldo</a>
+		<a href="tarifa.html" class="mder"><i class="fa fa-th" aria-hidden="true"></i>Calcular Tarifa</a>
+		<a href="perfil.html" class="mder"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
+		<a href="faq.html" class="mder"><i class="fa fa-file-text" aria-hidden="true"></i>Preguntas Frecuentes</a>
+		<a href="index.html" class="mder"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a>
+	</div>
+
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!--MI JS-->

@@ -53,22 +53,8 @@ header{
 .centro{
 	text-align: center;
 }
-/*TEXTO CENTRO NAV*/
-.navbar-brand{
-	padding: 15px 20%;
-	line-height: 30px;
-}
-/*COLOR TEXTO CENTRO NAV*/
-.navbar-default .navbar-brand{
-	color: white;
-}
-/*BORDE HAMBURGUESA*/
-.navbar-default .navbar-toggle{
-	border: 0px;
-}
-/*QUITAR BORDE NAVBAR*/
-.navbar-default{
-	border: 0px;
+.navbar-header{
+	padding: 10px;
 }
 /*ESTILOS MENU*/
 .menu{
@@ -79,4 +65,59 @@ header{
 /*ESPACIO ARRIBA*/
 .mtop{
 	margin-top: 10px;
+}
+
+
+/*Prueba SIDENAV*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3e3f41;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f6a800;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+/*TAMAÑO ICONO HAMBURGUESA*/
+.fa-bars{
+	font-size: 24px;
+}
+.fa-times{
+	background-color: transparent;
+}
+.icono{
+	position: relative;
+	right: 150px;
+}
+
+/*ESTILOS ICONOS*/
+.fa-user, .fa-usd, .fa-th, .fa-file-text, .fa-long-arrow-right{
+	color: #f6a800;
+	background-color: transparent;
+	padding: 5px;
 }

@@ -44,7 +44,7 @@ $('#versaldo').click(function(){
 	var inputsaldo = $('#ntarjeta').val();
 	console.log (inputsaldo);
 	$.ajax({
-		url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+inputsaldo,
+		url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+inputsaldo,
 		type: 'GET',
 		datatype: 'JSON',
 	})
@@ -68,7 +68,7 @@ $('#calctarifa').click(function(response){
 	console.log (tarifa); 
 
 	$.ajax({
-		url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+inputsaldo,
+		url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+inputsaldo,
 		type: 'GET',
 		datatype: 'JSON',
 	})

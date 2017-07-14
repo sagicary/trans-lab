@@ -56,7 +56,43 @@ $('#versaldo').click(function(){
         .always(function() {
             console.log('Completado')
         });
+})
 
+$('#calctarifa').click(function(response){
+	var inputsaldo = $('#ntarjeta').val();
+	var tarifa = $('#selectTarifa').val();
+	console.log (inputsaldo);
+	console.log (tarifa);
+
+	$.ajax({
+		url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+inputsaldo,
+		type: 'GET',
+		datatype: 'JSON',
+	})
+	.done(function(response) {
+            console.log(response);
+            var numsaldo = response.saldoTarjeta;
+            //console.log(numsaldo);
+            var quitardig = numsaldo.replace("$","");
+            //console.log (quitardig);
+            var quitarpunto = quitardig.replace(".","");
+            //console.log(quitarpunto);
+            var saldo = parseInt(quitarpunto);
+            console.log (saldo);
+            var final = saldo - tarifa
+            $('#muestratarifa').append("<div class='navsaldo'>COSTO PASAJE</div>"+
+            	"<div class='headersaldo'>" + tarifa + "</div>"+
+				"<div class='navsaldo'>SALDO FINAL</div>"+
+            	"<div class='headersaldo'>" + final + "</div>");
+        })
+        .fail(function() {
+            console.log('Error al conectar a la Api')
+        })
+        .always(function() {
+            console.log('Completado')
+        });
+
+	
 })
 
 /*

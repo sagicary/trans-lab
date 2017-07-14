@@ -25,15 +25,15 @@
 	<div class="perfiltarifa">
 		<div class="col-xs-12 text-center">
 			<div class="col-xs-12 top">
-			<input type="text" class="form-control ntar" placeholder="Número Tarjeta">
+			<input type="text" class="form-control ntar" placeholder="Número Tarjeta" id="ntarjeta">
 			<!--CAMBIAR SELECT POR N° TARJETAS GUARDADAS-->
 			<div class="col-xs-6 top">
-				Tarifa
+				Tarifas
 			<select name="" id="selectTarifa" class="form-control mtop">
 				<option value="">Choose your option</option>
-				<option value="1">Opción 1</option>
-				<option value="2">Opción 2</option>
-				<option value="3">Opción 3</option>
+				<option value="740">Horario Alto $740</option>
+				<option value="680">Horario Medio $680</option>
+				<option value="640">Horario Bajo $640</option>
 			</select>
 			</div>
 			<div class="col-xs-6 top">
@@ -46,6 +46,7 @@
 			</select>
 			</div>
 			<button type="button" class="btn btn-default btn-color blanco mtop" id="calctarifa">CALCULAR</button>
+			<div id="muestratarifa"></div>
 	       	</div>
 	    </div>
 	</div>

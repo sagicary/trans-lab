@@ -167,3 +167,17 @@ header{
 	width: 200px;
 	margin-top: 20px;
 }
+#muestrasaldo{
+	margin-top: 50px;
+}
+.navsaldo{
+	background-color: #3e3f41;
+	color: white;
+}
+.headersaldo{
+	background-color: #f6a800;
+	color: white;
+	font-size: 30px;
+	font-weight: bolder;
+	padding: 20px;
+}

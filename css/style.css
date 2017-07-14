@@ -150,11 +150,20 @@ header{
 	height: 100vh;
 	padding: 50px;
 }
-
 .mail{
 	background-color: white;
 }
+/*ESTILO INPUT*/
 .ntar{
 	background-color: transparent;
 	border-bottom: 1px solid #3e3f41;
+}
+/*TARIFA*/
+.perfiltarifa{
+	background-color: #cfcfd1;
+	height: 100vh;
+}
+#tarifa{
+	width: 200px;
+	margin-top: 20px;
 }

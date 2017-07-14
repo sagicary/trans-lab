@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TransLab - Tarifa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<!--FA-->
+	<script src="https://use.fontawesome.com/52df75c062.js"></script>
+	<!--ESTILOS-->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--NAV-->
+	<div class="container-fluid">
+	    <div class="navbar-header text-center">
+	    	<i class="fa fa-bars blanco icono" aria-hidden="true" id="openNav"></i>
+	        <span class="blanco">TRANS-LAB</span>
+	    </div>
+	</div><!-- /.container-fluid -->
+<!--HEADER-->
+	<div class="perfiltarifa">
+		<div class="col-xs-12 text-center">
+			<div class="col-xs-12 top">
+			<input type="text" class="form-control ntar" placeholder="Número Tarjeta">
+			<!--CAMBIAR SELECT POR N° TARJETAS GUARDADAS-->
+			<div class="col-xs-6 top">
+				Tarifa
+			<select name="" id="selectTarifa" class="form-control mtop">
+				<option value="">Choose your option</option>
+				<option value="1">Opción 1</option>
+				<option value="2">Opción 2</option>
+				<option value="3">Opción 3</option>
+			</select>
+			</div>
+			<div class="col-xs-6 top">
+				Tarjeta
+			<select name="" id="selectTarifa" class="form-control mtop">
+				<option value="">Choose your option</option>
+				<option value="1">Opción 1</option>
+				<option value="2">Opción 2</option>
+				<option value="3">Opción 3</option>
+			</select>
+			</div>
+			<button type="button" class="btn btn-default btn-color blanco mtop" id="tarifa">CALCULAR</button>
+	       	</div>
+	    </div>
+	</div>
+
+	<!--PROBANDO SIDENAV-->
+	<div id="mySidenav" class="sidenav">
+		<i class="fa fa-times closebtn" aria-hidden="true" id="closeNav"></i>
+		<a href="saldo.html" class="mder"><i class="fa fa-usd" aria-hidden="true"></i>Ver Saldo</a>
+		<a href="tarifa.html" class="mder"><i class="fa fa-th" aria-hidden="true"></i>Calcular Tarifa</a>
+		<a href="perfil.html" class="mder"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
+		<a href="faq.html" class="mder"><i class="fa fa-file-text" aria-hidden="true"></i>Preguntas Frecuentes</a>
+		<a href="index.html" class="mder"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Home</a>
+	</div>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--MI JS-->
+	<script src="js/main.js"></script>
+</body>
+</html>

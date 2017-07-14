@@ -15,11 +15,14 @@ $('#btn-sesion').click(function(){
 	var inputmail = $('#mail').val();
 	console.log (inputmail);
 	console.log (vali.test(inputmail));
-	if (vali.test(inputmail)=="false"){
+	document.location.href= "menu_app.html";
+
+	/*if (vali.test(inputmail)=="false"){
 		$('.errormail').text("Reingrese mail");
 		console.log("holi");
 		alert("hola");
-	}
+
+	}*/
 });
 
 /*REDIRECCIONAMIENTO DE MENU_APP*/

@@ -134,3 +134,27 @@ header{
 	padding-bottom: 70px;
 	text-align: center;
 }
+
+/*PROFILE*/
+.img-perfil{
+	width: 200px;
+	height: 200px;
+}
+.perfil{
+	background-color: #f6a800;
+	padding: 30px;
+	text-align: center;
+}
+.perfildown{
+	background-color: #cfcfd1;
+	height: 100vh;
+	padding: 50px;
+}
+
+.mail{
+	background-color: white;
+}
+.ntar{
+	background-color: transparent;
+	border-bottom: 1px solid #3e3f41;
+}

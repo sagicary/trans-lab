@@ -8,11 +8,13 @@ $('#closeNav').click(function(){
 });
 /*FIN SIDEBAR*/
 
+/*PARTE VALIDACION INDEX*/
 $('#btn-sesion').click(function(){
 	/*PONER VALIDACION DE DATOS*/
 	document.location.href = "menu_app.html";
 });
 
+/*REDIRECCIONAMIENTO DE MENU_APP*/
 $('#saldo').click(function(){
 	document.location.href = "saldo.html";
 });

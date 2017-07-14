@@ -13,13 +13,13 @@ $('#btn-sesion').click(function(){
 	/*PONER VALIDACION DE DATOS*/
 	var vali = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
 	var inputmail = $('#mail').val();
-	//console.log (inputmail);
-	//console.log (vali.test(inputmail));
+	console.log (inputmail);
+	console.log (vali.test(inputmail));
 	if (vali.test(inputmail)=="false"){
-		//$('.errormail').text("Reingrese mail");
+		$('.errormail').text("Reingrese mail");
+		console.log("holi");
+		alert("hola");
 	}
-	setTimeout("location.href='menu_app.html'", 1000);
-	//document.location.href = "menu_app.html";
 });
 
 /*REDIRECCIONAMIENTO DE MENU_APP*/
@@ -62,7 +62,7 @@ $('#calctarifa').click(function(response){
 	var inputsaldo = $('#ntarjeta').val();
 	var tarifa = $('#selectTarifa').val();
 	console.log (inputsaldo);
-	console.log (tarifa);
+	console.log (tarifa); 
 
 	$.ajax({
 		url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+inputsaldo,

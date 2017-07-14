@@ -1,12 +1,11 @@
 /* YeyeYeee código aquí */
-/*COLOR DE FONDO*/
-*{
-	background-color: #3e3f41; 
-}
+
 /*ESPACIO AL HEADER Y ALINEACION*/
 header{
 	padding: 70px; 
 	text-align: center;
+	background-color: #3e3f41; 
+	height: 100vh;
 }
 /*ESTILOS DE LA IMAGEN*/
 .imagen{
@@ -43,18 +42,13 @@ header{
 }
 
 /*ESTILOS MENU-APP*/
-/*ESTILO HAMBURGUESA*/
-.navbar-toggle{
-	float: left;
-	margin-left: 15px;
-	margin-top: 10px;
-}
 /*ALINEAR CENTRO*/
 .centro{
 	text-align: center;
 }
 .navbar-header{
 	padding: 10px;
+	background-color: #3e3f41;
 }
 /*ESTILOS MENU*/
 .menu{
@@ -109,6 +103,7 @@ header{
 }
 .fa-times{
 	background-color: transparent;
+	padding-top: 10px;
 }
 .icono{
 	position: relative;
@@ -120,4 +115,13 @@ header{
 	color: #f6a800;
 	background-color: transparent;
 	padding: 5px;
+}
+
+.accordion{
+	background-color: white;
+	height: 100vh;
+}
+.acordeon, .panel-group{
+	background-color: white;
+	height: 100vh;
 }

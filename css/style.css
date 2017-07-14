@@ -109,19 +109,28 @@ header{
 	position: relative;
 	right: 150px;
 }
-
 /*ESTILOS ICONOS*/
 .fa-user, .fa-usd, .fa-th, .fa-file-text, .fa-long-arrow-right{
 	color: #f6a800;
 	background-color: transparent;
 	padding: 5px;
 }
-
-.accordion{
-	background-color: white;
+/*ACORDEON*/
+.acordeon{
+	padding-top: 50px;
+	background-color: #a9a9ab;
 	height: 100vh;
 }
-.acordeon, .panel-group{
+.panel-group{
 	background-color: white;
-	height: 100vh;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.pfreq{
+	background-color: #f6a800;
+	color: white;
+	font-weight: bolder;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
 }

@@ -58,11 +58,16 @@ $('#faq').click(function(){
 });
 
 /*API*/
+var num = 0;
+var arreglo = [];
 $('#tarjeta').click(function(){
 	var tarj = $('#numtarjeta').val();
-	localStorage.tarjeta = tarj;
-	console.log(localStorage.tarjeta);
-	$('#tarjetas').append('<p>'+tarj+'</p>');
+	localStorage.num = tarj;
+	console.log(localStorage.num);
+	arreglo[num]=tarj;
+	console.log (arreglo[num]);
+	num ++;
+	$('#tarjetas').append('<p class="card">'+tarj+'</p>');
 
 })
 

@@ -140,7 +140,10 @@ header{
 	padding-bottom: 70px;
 	text-align: center;
 }
-
+.card{
+	margin-top: 5px;
+	background-color: white;
+}
 /*PROFILE*/
 .img-perfil{
 	width: 100px;

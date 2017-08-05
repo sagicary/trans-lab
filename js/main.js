@@ -13,16 +13,26 @@ $('#btn-sesion').click(function(){
 	/*PONER VALIDACION DE DATOS*/
 	var vali = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
 	var inputmail = $('#mail').val();
-	console.log (inputmail);
-	console.log (vali.test(inputmail));
-	document.location.href= "menu_app.html";
-
-	/*if (vali.test(inputmail)=="false"){
-		$('.errormail').text("Reingrese mail");
-		console.log("holi");
-		alert("hola");
-
-	}*/
+	var clave = $('#pass').val();
+	console.log(clave);
+	//console.log (inputmail);
+	//console.log (vali.test(inputmail));
+	if (vali.test(inputmail)==false){
+		$('.errormail').show();
+	}else{
+		$('.errormail').hide();
+		alert("mail correcto");
+		//document.location.href= "menu_app.html";
+	}
+	if(clave.length>8 || isNaN(clave)==true || clave==''){
+		$('.errorpass').show();
+	}else{
+		$('.errorpass').hide();
+		alert("pass correcto");
+	}
+	if(vali.test(inputmail)==true && inputmail!=='' && clave.length<8 && isNaN(clave)==false & clave!==''){
+		document.location.href= "menu_app.html";
+	}
 });
 
 /*REDIRECCIONAMIENTO DE MENU_APP*/

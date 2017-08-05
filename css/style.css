@@ -16,6 +16,7 @@ header{
 .titulo{
 	color: #f6a800;
 	font-weight: bolder;
+	font-size:24px;
 }
 /*ESTILOS DEL BOTON*/
 .btn-color{
@@ -96,7 +97,12 @@ header{
     font-size: 18px;
     margin-left: 50px;
 }
-
+.errormail{
+	display: none;
+}
+.errorpass{
+	display: none;
+}
 /*TAMAÑO ICONO HAMBURGUESA*/
 .fa-bars{
 	font-size: 24px;
@@ -107,7 +113,7 @@ header{
 }
 .icono{
 	position: relative;
-	right: 150px;
+	right: 70px;
 }
 /*ESTILOS ICONOS*/
 .fa-user, .fa-usd, .fa-th, .fa-file-text, .fa-long-arrow-right{

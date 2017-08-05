@@ -21,16 +21,19 @@ $('#btn-sesion').click(function(){
 		$('.errormail').show();
 	}else{
 		$('.errormail').hide();
-		alert("mail correcto");
+		//alert("mail correcto");
 		//document.location.href= "menu_app.html";
 	}
 	if(clave.length>8 || isNaN(clave)==true || clave==''){
 		$('.errorpass').show();
 	}else{
 		$('.errorpass').hide();
-		alert("pass correcto");
+		//alert("pass correcto");
 	}
 	if(vali.test(inputmail)==true && inputmail!=='' && clave.length<8 && isNaN(clave)==false & clave!==''){
+		localStorage.mail = inputmail;
+		console.log(localStorage.mail);
+		//$('#lsmail').append('<p>'+localStorage.mail+'</p>');
 		document.location.href= "menu_app.html";
 	}
 });
@@ -44,12 +47,18 @@ $('#tarifa').click(function(){
 });
 $('#perfil').click(function(){
 	document.location.href = "perfil.html";
+	//console.log(localStorage.mail);
 });
+
+$('#lsmail').append(localStorage.getItem('mail'));
+	console.log(localStorage.getItem('mail'));
+
 $('#faq').click(function(){
 	document.location.href = "faq.html";
 });
 
 /*API*/
+
 $('#versaldo').click(function(){
 	var inputsaldo = $('#ntarjeta').val();
 	console.log (inputsaldo);

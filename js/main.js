@@ -58,6 +58,13 @@ $('#faq').click(function(){
 });
 
 /*API*/
+$('#tarjeta').click(function(){
+	var tarj = $('#numtarjeta').val();
+	localStorage.tarjeta = tarj;
+	console.log(localStorage.tarjeta);
+	$('#tarjetas').append('<p>'+tarj+'</p>');
+
+})
 
 $('#versaldo').click(function(){
 	var inputsaldo = $('#ntarjeta').val();

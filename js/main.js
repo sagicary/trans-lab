@@ -57,7 +57,7 @@ $('#faq').click(function(){
 	document.location.href = "faq.html";
 });
 
-/*API*/
+/*Guardar tarjetas con localStorage*/
 var num = 0;
 var arreglo = [];
 $('#tarjeta').click(function(){
@@ -72,9 +72,28 @@ $('#tarjeta').click(function(){
 
 })
 
+/*API*/
+
+	
+for(var i=0; i<localStorage.length-1; i++){
+		console.log(localStorage.getItem(i));
+		$('#selectSaldo').append(
+			'<option value="'+localStorage.getItem(i)+'">'+localStorage.getItem(i)+'</option>');
+	}
+
 $('#versaldo').click(function(){
-	var inputsaldo = $('#ntarjeta').val();
-	console.log (inputsaldo);
+	//var inputsaldo = $('#ntarjeta').val();
+	//inputsaldo = $('#selectSaldo').val();
+	//console.log (inputsaldo);
+	var inputsaldo = 0;
+	if($('#ntarjeta').val()==""){
+		inputsaldo = $('#selectSaldo').val();
+		console.log("ingresoselect"+inputsaldo);
+	} else{
+		inputsaldo = $('#ntarjeta').val();
+		console.log("ingresotarjeta"+inputsaldo);
+	}
+
 	$.ajax({
 		url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+inputsaldo,
 		type: 'GET',

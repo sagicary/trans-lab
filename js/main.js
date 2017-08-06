@@ -62,10 +62,11 @@ var num = 0;
 var arreglo = [];
 $('#tarjeta').click(function(){
 	var tarj = $('#numtarjeta').val();
-	localStorage.num = tarj;
-	console.log(localStorage.num);
-	arreglo[num]=tarj;
-	console.log (arreglo[num]);
+	//localStorage.num = tarj;
+	//console.log(localStorage.num);
+	//arreglo[num]=tarj;
+	localStorage.setItem(num, tarj);
+	//console.log (arreglo[num]);
 	num ++;
 	$('#tarjetas').append('<p class="card">'+tarj+'</p>');
 

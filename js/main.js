@@ -73,15 +73,21 @@ $('#tarjeta').click(function(){
 })
 
 /*API*/
-
-	
+/*For para llenar select saldo*/	
 for(var i=0; i<localStorage.length-1; i++){
-		console.log(localStorage.getItem(i));
+		//console.log(localStorage.getItem(i));
 		$('#selectSaldo').append(
+			'<option value="'+localStorage.getItem(i)+'">'+localStorage.getItem(i)+'</option>');
+	}
+/*For para llenar select calcular tarifa*/
+for(var i=0; i<localStorage.length-1; i++){
+		//console.log(localStorage.getItem(i));
+		$('#selectTarjeta').append(
 			'<option value="'+localStorage.getItem(i)+'">'+localStorage.getItem(i)+'</option>');
 	}
 
 $('#versaldo').click(function(){
+	$('#muestrasaldo').empty();
 	//var inputsaldo = $('#ntarjeta').val();
 	//inputsaldo = $('#selectSaldo').val();
 	//console.log (inputsaldo);
@@ -113,11 +119,16 @@ $('#versaldo').click(function(){
 })
 
 $('#calctarifa').click(function(response){
-	var inputsaldo = $('#ntarjeta').val();
+	$('#muestratarifa').empty();
+	var inputsaldo = 0;
+	if($('#ntarjeta').val()==""){
+		inputsaldo = $('#selectTarjeta').val();
+		//console.log("ingresoselect"+inputsaldo);
+	} else{
+		inputsaldo = $('#ntarjeta').val();
+		//console.log("ingresotarjeta"+inputsaldo);
+	}
 	var tarifa = $('#selectTarifa').val();
-	console.log (inputsaldo);
-	console.log (tarifa); 
-
 	$.ajax({
 		url: 'https://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip='+inputsaldo,
 		type: 'GET',
